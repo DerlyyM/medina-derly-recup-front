@@ -51,7 +51,6 @@
         top: 0;
         left: 0;
         z-index: 1000;
-        /* color no afecta fondo, solo texto */
       
         color: #82548C; 
       }
@@ -85,6 +84,7 @@
       padding: 4px 16px;
       font-size: 0.95rem;
       display: inline-block;
+      clip-path: polygon(35px 0, 100% 0, 100% 100%, 0 100% );
     }
 
  .logo-superior {
@@ -149,7 +149,9 @@
       background-color: #548c82;
       color: #fff;
     }
-
+.contanto {
+  
+}
 
 
 
