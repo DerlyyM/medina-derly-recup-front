@@ -18,14 +18,14 @@
     }
 
     .navbar a {
-      color: #fff;
+      color: #e1e9e9;
       text-decoration: none;
       margin-right: 20px;
       transition: color 0.3s;
     }
 
     .navbar a:hover {
-      color: #7A8C54;
+      color: #43DFE0;
     }
 
     .btn-ingresar {
@@ -74,7 +74,7 @@
 
     .contacto-superior {
       color: #fff !important;
-      background: #8C6654;
+      background: #43E077;
       border-radius: 0 6px 6px 0;
       font-weight: 600;
       padding: 4px 16px;
