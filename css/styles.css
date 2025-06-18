@@ -9,12 +9,13 @@
       margin: 0;
       padding: 0;
       font-family: 'Segoe UI', Arial, sans-serif;
-      background-color: #f8f9fa;
+      background-color: #f5f5f5; /* Gris claro */
+      color: #233d4d;            /* Azul oscuro para texto */
     }
 
     .navbar {
       background-color: #548c82;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      box-shadow: 0 2px 8px #43AEE0(0,0,0,0.07);
     }
 
     .navbar a {
@@ -49,7 +50,7 @@
         top: 0;
         left: 0;
         z-index: 1000;
-        color: #333;
+        color: #43AEE0;
         transition: color 0.3s;
       
         color: #82548C; 
@@ -69,12 +70,15 @@
     }
 
     footer {
-      font-size: 0.95rem;
+      background-color: #43DFE0; /* Azul oscuro que contrasta con #548c82 */
+      color: #ffffff;            /* Texto blanco para buen contraste */
+      padding: 20px 0;
+      text-align: center;
     }
 
     .contacto-superior {
       color: #fff !important;
-      background: #43E077;
+      background: #43DFE0;
       border-radius: 0 6px 6px 0;
       font-weight: 600;
       padding: 4px 16px;
@@ -96,7 +100,7 @@
     }
 
     .contacto-superior a:hover {
-      color: #fff !important;
+      color: #45E041 !important;
       text-decoration: underline;
     }
 
@@ -124,24 +128,29 @@
   font-weight: bold; 
 }
 
-<!-- Contenedor principal con flexbox para separar logo y menú -->
-<div style="display: flex; align-items: flex-start;">
-  <!-- Logo en la parte superior izquierda -->
-  <div style="padding: 20px;">
-    <a href="index.html">
-      <img src="ruta/del/logo.png" alt="Logo Floristería" style="max-width: 120px;">
-    </a>
-  </div>
-  <!-- Menú alineado a la derecha -->
-  <nav style="margin-left: auto; padding: 20px;">
-    <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 20px;">
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Productos</a></li>
-      <li><a href="#">Servicios</a></li>
-      <li><a href="#">Contacto</a></li>
-    </ul>
-  </nav>
-</div>
+header, nav {
+  background-color: #548c82; /* Color principal */
+  color: #ffffff;            /* Texto blanco */
+}
+
+.nav-link {
+  color: #ffe066;            /* Amarillo claro para enlaces */
+}
+
+.nav-link:hover {
+  color: #ff7f50;            /* Coral al pasar el mouse */
+}
+
+.btn-principal {
+  background-color: #ffb347; /* Naranja */
+  color: #233d4d;            /* Azul oscuro */
+  border: none;
+}
+
+.btn-principal:hover {
+  background-color: #548c82;
+  color: #fff;
+}
 
 
 
