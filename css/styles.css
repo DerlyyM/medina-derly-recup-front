@@ -109,7 +109,39 @@
       bottom: 0;
       width: 100%;
     }
- }
+ .navbar-nav .nav-link {
+  color: #43E077; 
+  font-weight: 500; 
+  padding: 0.5rem 1rem; 
+  transition: color 0.3s ease; 
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--color-primario);
+}
+
+.navbar .btn {
+  font-weight: bold; 
+}
+
+<!-- Contenedor principal con flexbox para separar logo y menú -->
+<div style="display: flex; align-items: flex-start;">
+  <!-- Logo en la parte superior izquierda -->
+  <div style="padding: 20px;">
+    <a href="index.html">
+      <img src="ruta/del/logo.png" alt="Logo Floristería" style="max-width: 120px;">
+    </a>
+  </div>
+  <!-- Menú alineado a la derecha -->
+  <nav style="margin-left: auto; padding: 20px;">
+    <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 20px;">
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Productos</a></li>
+      <li><a href="#">Servicios</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+</div>
 
 
 
