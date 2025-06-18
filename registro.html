@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Registro de Usuario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+      <div class="card shadow" style="max-width: 400px; width: 100%;">
+        <div class="card-body">
+          <div class="text-center mb-3">
+            <i class="bi bi-person-plus" style="font-size: 2.5rem; color: #548C82;"></i>
+          </div>
+          <h5 class="card-title text-center mb-3">Registro de Usuario</h5>
+          <div class="w-100 d-flex justify-content-center my-4">
+            <a href="index.html">
+              <img src="img/LOGO.PNJ.webp" alt="Logo" height="80">
+            </a>
+          </div>
+          <form>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">
+                <i class="bi bi-person-fill me-1"></i> Nombre completo
+              </label>
+              <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">
+                <i class="bi bi-envelope-fill me-1"></i> Correo electrónico
+              </label>
+              <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo">
+            </div>
+            <div class="mb-3">
+              <label for="documento" class="form-label">
+                <i class="bi bi-card-text me-1"></i> Documento
+              </label>
+              <input type="text" class="form-control" id="documento" placeholder="Número de documento">
+            </div>
+            <div class="mb-3">
+              <label for="usuario" class="form-label">
+                <i class="bi bi-person-badge-fill me-1"></i> Usuario
+              </label>
+              <input type="text" class="form-control" id="usuario" placeholder="Crea un usuario">
+            </div>
+            <div class="mb-3">
+              <label for="contrasena" class="form-label">
+                <i class="bi bi-lock-fill me-1"></i> Contraseña
+              </label>
+              <input type="password" class="form-control" id="contrasena" placeholder="Crea una contraseña">
+            </div>
+            <button type="submit" class="btn btn-primary w-100 mb-2">Registrarse</button>
+            <div class="text-center">
+              <a href="index.html" class="small"><i class="bi bi-arrow-left"></i> Volver al inicio</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-light text-center text-secondary py-3 mt-5">
+      <div>
+        &copy; 2025 Margarita Floreria. Todos los derechos reservados.
+      </div>
+    </footer>
+  </body>
+</html>
