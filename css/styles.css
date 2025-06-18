@@ -1,7 +1,7 @@
 .imagen-principal {
     width: 100%;
     height: 100%; 
-    object-fit: cover
+    object-fit: cover;
     }
 
 
@@ -15,7 +15,8 @@
 
     .navbar {
       background-color: #548c82;
-      box-shadow: 0 2px 8px #43AEE0(0,0,0,0.07);
+      /* box-shadow corregido */
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
     }
 
     .navbar a {
@@ -50,8 +51,7 @@
         top: 0;
         left: 0;
         z-index: 1000;
-        color: #43AEE0;
-        transition: color 0.3s;
+        /* color no afecta fondo, solo texto */
       
         color: #82548C; 
       }
@@ -69,9 +69,10 @@
       background-color: #3d6d65;
     }
 
+    /* Usa solo uno de estos según tu HTML */
     footer {
-      background-color: #43DFE0; /* Azul oscuro que contrasta con #548c82 */
-      color: #ffffff;            /* Texto blanco para buen contraste */
+      background-color: #43DFE0; 
+      color: #ffffff;            
       padding: 20px 0;
       text-align: center;
     }
@@ -104,6 +105,7 @@
       text-decoration: underline;
     }
 
+    /* Si usas <footer class="footer"> usa esto, si no, elimínalo */
     .footer {
       background-color: #548c82;
       color: #e1e9e9;
@@ -113,44 +115,40 @@
       bottom: 0;
       width: 100%;
     }
- .navbar-nav .nav-link {
-  color: #43E077; 
-  font-weight: 500; 
-  padding: 0.5rem 1rem; 
-  transition: color 0.3s ease; 
-}
 
-.navbar-nav .nav-link:hover {
-  color: var(--color-primario);
-}
+  
+    .navbar-nav .nav-link,
+    .nav-link {
+      color: #45E041;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      transition: color 0.3s ease;
+    }
 
-.navbar .btn {
-  font-weight: bold; 
-}
+    .navbar-nav .nav-link:hover,
+    .nav-link:hover {
+      color: #43DFE0;
+    }
 
-header, nav {
-  background-color: #548c82; /* Color principal */
-  color: #ffffff;            /* Texto blanco */
-}
+    .navbar .btn {
+      font-weight: bold; 
+    }
 
-.nav-link {
-  color: #ffe066;            /* Amarillo claro para enlaces */
-}
+    header, nav {
+      background-color: #548c82; /* Color principal */
+      color: #ffffff;            /* Texto blanco */
+    }
 
-.nav-link:hover {
-  color: #ff7f50;            /* Coral al pasar el mouse */
-}
+    .btn-principal {
+      background-color: #ffb347; /* Naranja */
+      color: #233d4d;            /* Azul oscuro */
+      border: none;
+    }
 
-.btn-principal {
-  background-color: #ffb347; /* Naranja */
-  color: #233d4d;            /* Azul oscuro */
-  border: none;
-}
-
-.btn-principal:hover {
-  background-color: #548c82;
-  color: #fff;
-}
+    .btn-principal:hover {
+      background-color: #548c82;
+      color: #fff;
+    }
 
 
 
